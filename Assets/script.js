@@ -3,10 +3,12 @@
   var citySearch = document.querySelector("#searchCityInput");
   var button = document.querySelector("#searchCityButton");
 
+     // Code executed when the button is clicked
   button.addEventListener("click", function() {
     var citySearchHistory = document.createElement("button");
     document.querySelector("#Button").appendChild(citySearchHistory);
     citySearchHistory.textContent = citySearch.value;
+  
 
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +

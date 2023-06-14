@@ -7,18 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./Assets/style.css">
+    
 </head>
 
 <body>
-    <section class="w3-row">
+    <header class="w3-container w3-teal"> Weather Dashboard</header>
+    <section class="w3-row w-3-panel">
     <section id="Button" class="w3-col m3">
-        <h2>Search for a City</h2>
-        <input id="searchCity">
-        <button id="searchCityButton">Search</button>
+        <h2 class="w3-container">Search for a City</h2>
+        <input id="searchCityInput">
+        <button class="w3-table w3-bordered" id="searchCityButton">Search</button>
+        <ul id="cityList"></ul>
 
     </section>
     <section class="w3-col m8 w3-card w3-padding w3-margin">
-        <h2>Atlanta</h2>
+        <h2 id="searchCityDisplay">Chicago</h2>
         <img id="img1" src="" alt="">
         <p id="temp1">temp:</p>
         <p id="wind1">Wind:</p>
@@ -26,37 +30,37 @@
     </section>
     </section>
     <section class="w3-row w3-padding">
-        <h3>5-day Forecast:</h3>
+        <h3 id="h3">5-day Forecast:</h3>
         <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin">
-            <h3>Date</h3>
+            <h3 id="date2">Date</h3>
             <img id="img2" src="" alt="">
             <p id="temp2">temp:</p>
             <p id="wind2">Wind:</p>
             <p id="humidity2">Humidty:</p>
         </article>
         <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin">
-            <h3>Date</h3>
+            <h3 id="date3">Date</h3>
             <img id="img3" src="" alt="">
             <p id="temp3">temp:</p>
             <p id="wind3">Wind:</p>
             <p id="humidity3">Humidty:</p>
         </article>
         <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin">
-            <h3>Date</h3>
+            <h3 id="date4">Date</h3>
             <img id="img4" src="" alt="">
             <p id="temp4">temp:</p>
             <p id="wind4">Wind:</p>
             <p id="humidity4">Humidty:</p>
         </article>
         <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin">
-            <h3>Date</h3>
+            <h3 id="date5">Date</h3>
             <img id="img5" src="" alt="">
             <p id="temp5">temp:</p>
             <p id="wind5">Wind:</p>
             <p id="humidity5">Humidty:</p>
         </article>
         <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin">
-            <h3>Date</h3>
+            <h3 id="date6">Date</h3>
             <img id="img6" src="" alt="">
             <p id="temp6">temp:</p>
             <p id="wind6">Wind:</p>

@@ -2,6 +2,7 @@
   var myApiKey = "a3754bd104cc6a59f48fbeea12e2c71f";
   var citySearch = document.querySelector("#searchCityInput");
   var button = document.querySelector("#searchCityButton");
+  var searchCityDisplay = document.querySelector("#searchCityDisplay");
 
      // Code executed when the button is clicked
   button.addEventListener("click", function() {
@@ -20,6 +21,7 @@
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
+        searchCityDisplay.textContent = citySearch.value; // Update the city display
         document.querySelector("#temp1").textContent =
           "Temp: " + data.main.temp;
         document.querySelector("#wind1").textContent =

@@ -39,4 +39,4 @@ Providing suggestions or autocomplete functionality when typing in the city sear
 Adding animations or visual effects to enhance the user experience.
 
 ## Example:
-https://codingobliqua.github.io/Weather_Dash/ 
+https://codingobliqua.github.io/Weather_Dash/ ![alt text](./Assets/WeatherApi.gif)

@@ -12,22 +12,30 @@
 
 <body>
     <!-- Header -->
-    <header class="w3-container w3-teal"> Weather Dashboard</header>
+    <header class="w3-container w3-teal">
+        <h1>Weather Dashboard</h1>
+    </header>
 
     <!-- First section -->
-    <section class="w3-row w-3-panel">
+    <section class="w3-row w3-panel">
         <section id="Button" class="w3-col m3">
             <h2 class="w3-container">Search for a City</h2>
-            <input id="searchCityInput"> <!-- Input field for city search -->
-            <button class="w3-table w3-bordered" id="searchCityButton">Search</button> <!-- Button to trigger city search -->
-            <ul id="cityList"></ul> <!-- List to display search history -->
+            <input id="searchCityInput" class="w3-input w3-border" placeholder="Enter city name"> <!-- Input field for city search -->
+            <button class="w3-button w3-blue w3-margin-top" id="searchCityButton">Search</button> <!-- Button to trigger city search -->
+            <ul id="cityList" class="w3-ul w3-margin-top"></ul> <!-- List to display search history -->
         </section>
         <section class="w3-col m8 w3-card w3-padding w3-margin">
-            <h2 id="searchCityDisplay">Chicago</h2> <!-- Heading to display the searched city -->
-            <img id="img1" src="" alt=""> <!-- Image to display weather icon -->
-            <p id="temp1">temp:</p> <!-- Paragraph to display temperature -->
-            <p id="wind1">Wind:</p> <!-- Paragraph to display wind information -->
-            <p id="humidity1">Humidty:</p> <!-- Paragraph to display humidity -->
+            <h2 id="searchCityDisplay"></h2> <!-- Heading to display the searched city -->
+            <div class="w3-row">
+                <div class="w3-col m6">
+                    <img id="img1" src="" alt=""> <!-- Image to display weather icon -->
+                </div>
+                <div class="w3-col m6">
+                    <p id="temp1" class="w3-large">Temperature:</p> <!-- Paragraph to display temperature -->
+                    <p id="wind1">Wind:</p> <!-- Paragraph to display wind information -->
+                    <p id="humidity1">Humidity:</p> <!-- Paragraph to display humidity -->
+                </div>
+            </div>
         </section>
     </section>
 
@@ -35,44 +43,44 @@
     <section class="w3-row w3-padding">
         <h3 id="h3">5-day Forecast:</h3> <!-- Heading for the forecast section -->
         <!-- Forecast card 1 -->
-        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin">
-            <h3 id="date2">Date</h3> <!-- Heading to display the date -->
+        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin forecast-card">
+            <h3 id="date2" class="w3-center">Date</h3> <!-- Heading to display the date -->
             <img id="img2" src="" alt=""> <!-- Image to display weather icon -->
-            <p id="temp2">temp:</p> <!-- Paragraph to display temperature -->
-            <p id="wind2">Wind:</p> <!-- Paragraph to display wind information -->
-            <p id="humidity2">Humidty:</p> <!-- Paragraph to display humidity -->
+            <p id="temp2" class="w3-center">Temperature:</p> <!-- Paragraph to display temperature -->
+            <p id="wind2" class="w3-center">Wind:</p> <!-- Paragraph to display wind information -->
+            <p id="humidity2" class="w3-center">Humidity:</p> <!-- Paragraph to display humidity -->
         </article>
         <!-- Forecast card 2 -->
-        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin">
-            <h3 id="date3">Date</h3>
+        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin forecast-card">
+            <h3 id="date3" class="w3-center">Date</h3>
             <img id="img3" src="" alt="">
-            <p id="temp3">temp:</p>
-            <p id="wind3">Wind:</p>
-            <p id="humidity3">Humidty:</p>
+            <p id="temp3" class="w3-center">Temperature:</p>
+            <p id="wind3" class="w3-center">Wind:</p>
+            <p id="humidity3" class="w3-center">Humidity:</p>
         </article>
         <!-- Forecast card 3 -->
-        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin">
-            <h3 id="date4">Date</h3>
+        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin forecast-card">
+            <h3 id="date4" class="w3-center">Date</h3>
             <img id="img4" src="" alt="">
-            <p id="temp4">temp:</p>
-            <p id="wind4">Wind:</p>
-            <p id="humidity4">Humidty:</p>
+            <p id="temp4" class="w3-center">Temperature:</p>
+            <p id="wind4" class="w3-center">Wind:</p>
+            <p id="humidity4" class="w3-center">Humidity:</p>
         </article>
         <!-- Forecast card 4 -->
-        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin">
-            <h3 id="date5">Date</h3>
+        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin forecast-card">
+            <h3 id="date5" class="w3-center">Date</h3>
             <img id="img5" src="" alt="">
-            <p id="temp5">temp:</p>
-            <p id="wind5">Wind:</p>
-            <p id="humidity5">Humidty:</p>
+            <p id="temp5" class="w3-center">Temperature:</p>
+            <p id="wind5" class="w3-center">Wind:</p>
+            <p id="humidity5" class="w3-center">Humidity:</p>
         </article>
         <!-- Forecast card 5 -->
-        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin">
-            <h3 id="date6">Date</h3>
+        <article class="w3-card w3-blue-grey w3-col m2 w3-padding w3-margin forecast-card">
+            <h3 id="date6" class="w3-center">Date</h3>
             <img id="img6" src="" alt="">
-            <p id="temp6">temp:</p>
-            <p id="wind6">Wind:</p>
-            <p id="humidity6">Humidty:</p>
+            <p id="temp6" class="w3-center">Temperature:</p>
+            <p id="wind6" class="w3-center">Wind:</p>
+            <p id="humidity6" class="w3-center">Humidity:</p>
         </article>
     </section>
 

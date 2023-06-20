@@ -6,9 +6,8 @@ var searchCityDisplay = document.querySelector("#searchCityDisplay");
 var searchHistoryContainer = document.querySelector("#Button");
 
 function formatDate(dateString) {
-  var date = new Date(dateString);
-  var options = { month: "short", day: "numeric" };
-  return date.toLocaleDateString(undefined, options);
+  const options = { day: 'numeric', month: 'long', year: 'numeric', hour: 'numeric', minute: 'numeric' };
+  return new Date(dateString).toLocaleString('en-US', options);
 }
 
 // Function to display the weather data for a city
